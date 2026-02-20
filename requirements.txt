@@ -37,3 +37,7 @@ with check (auth.uid() = user_id);
 git add .
 git commit -m "fix: update postcss config for tailwind v4"
 git push origin master
+
+git add .
+git commit -m "fix: correct postcss config for ESM"
+git push origin master
