@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Body */
+html,
+body,
+#root {
+  height: 100%;
+  background: black;
+  color: #00ff00;
+  font-family: "Courier New", monospace;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00ff00;
+}
+
+/* Glow Text */
+.glow {
+  text-shadow:
+    0 0 5px #00ff00,
+    0 0 10px #00ff00,
+    0 0 20px #00ff00;
+}
+
+/* Matrix Terminal Card */
+.matrix-card {
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid #00ff00;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+/* Button Cyber Effect */
+.cyber-btn {
+  border: 1px solid #00ff00;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.cyber-btn:hover {
+  background: #00ff00;
+  color: black;
+  box-shadow: 0 0 10px #00ff00;
+}
+
+/* Input Styling */
+input,
+textarea {
+  outline: none;
+  color: #00ff00;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #00aa00;
+}
+
+/* Glitch animation helper */
+@keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+.flicker {
+  animation: flicker 1.5s infinite;
+}
